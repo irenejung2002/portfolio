@@ -63,7 +63,7 @@
           </div>
           <div class="flex flex-col">
             <span class="text-sm font-semibold leading-tight">Kakao Impact</span>
-            <span class="text-[11px] text-gray-500 leading-tight">Newsroom · Portfolio Edition</span>
+            <span class="text-[11px] text-gray-500 leading-tight">Newsroom · Portfolio </span>
           </div>
         </div>
 
@@ -84,7 +84,7 @@
       <div class="mx-auto max-w-6xl px-4 pt-8 pb-16 sm:px-6 lg:px-8">
 
         <!-- Hero / Landing -->
-        <section class="grid gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.1fr)] items-center mb-12">
+        <section class="grid gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.1fr)] items-center mb-10">
           <div>
             <div class="inline-flex items-center gap-2 rounded-full bg-black text-[11px] font-semibold text-white px-3 py-1 mb-4">
               <span class="material-symbols-outlined text-[14px]">bolt</span>
@@ -92,13 +92,24 @@
             </div>
             <h1 class="text-3xl sm:text-4xl lg:text-[40px] font-black leading-tight tracking-[-0.04em]">
               Kakao Impact Newsroom<br />
-              <span class="text-gray-700">AI·디지털 혁신이<br class="sm:hidden" /> 비즈니스가 되는 순간들</span>
+              <span class="mt-2 block text-gray-700">
+                AI·디지털 혁신이<br class="sm:hidden" /> 비즈니스가 되는 순간들
+              </span>
             </h1>
-            <p class="mt-4 text-sm sm:text-base text-gray-600 leading-relaxed">
-              카카오뱅크의 핀테크 사회공헌부터 카카오벤처스의 CES 2026 스타트업,
-              카카오게임즈·카카오모빌리티·카카오톡 캠페인까지.<br class="hidden sm:inline" />
-              하나의 뉴스룸에서 카카오의 다양한 실험과 파트너십을 한 번에 정리했습니다.
-            </p>
+
+            <!-- 사용 안내 블록 (강조 그라데이션) -->
+            <div class="mt-6 rounded-xl bg-gradient-to-r from-yellow-50 via-white to-amber-100 border border-amber-200/70 shadow-card p-4 sm:p-5 text-xs sm:text-sm text-gray-700">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-[18px] text-kb-black">info</span>
+                <p class="font-semibold text-gray-900">How to explore this newsroom</p>
+              </div>
+              <ul class="space-y-1 leading-relaxed">
+                <li>• 상단 메뉴에서 <strong>Featured / Latest / Deep Dives</strong> 섹션으로 바로 이동할 수 있습니다.</li>
+                <li>• 각 카드의 <strong>상단 이미지/썸네일</strong>을 클릭하면 실제 <strong>언론사 원문 기사</strong>가 새 탭에서 열립니다.</li>
+                <li>• 카드 하단의 “자세히 보기” 버튼을 누르면 이 페이지 안의 <strong>기사 상세 분석 섹션</strong>으로 스크롤됩니다.</li>
+                <li>• 모든 요약과 구조는 카카오 관련 보도자료·기사들을 기반으로 직접 <strong>큐레이션 및 편집</strong>한 결과물입니다.</li>
+              </ul>
+            </div>
 
             <div class="mt-6 flex flex-wrap gap-3 text-xs sm:text-sm">
               <a href="#finnect" class="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 font-semibold hover:opacity-90">
@@ -120,13 +131,11 @@
                   Portfolio Highlight
                 </div>
                 <p class="text-xs font-semibold text-gray-500 uppercase tracking-[0.18em]">
-                  CURATED BY BOWON JUNG · PORTFOLIO
+                  CURATED BY BOWON JUNG
                 </p>
                 <p class="mt-2 text-sm text-gray-700 leading-relaxed">
-                  본 페이지는 실제 카카오 관련 보도자료·기사 내용을 기반으로
-                  <span class="font-semibold">인터널 뉴스룸 인터페이스</span>를 재구성한
-                  포트폴리오용 웹사이트입니다. 정보 구조 설계, 비주얼 디자인, 카피라이팅까지
-                  전부 직접 큐레이션했다는 점에 주목해주세요.
+                  실제 카카오 관련 보도자료·기사를 바탕으로, 사내 뉴스룸 인터페이스를 설계·제작한
+                  포트폴리오 프로젝트입니다. 
                 </p>
                 <ul class="mt-4 grid grid-cols-2 gap-3 text-[11px] text-gray-600">
                   <li class="rounded-lg bg-gray-50 px-3 py-2">
@@ -135,7 +144,7 @@
                   </li>
                   <li class="rounded-lg bg-gray-50 px-3 py-2">
                     <p class="font-semibold text-gray-900 text-xs">원페이지 구조</p>
-                    <p>목록 + 상세 Deep Dive 한 번에</p>
+                    <p>랜딩 · 목록 · 상세 Deep Dive</p>
                   </li>
                 </ul>
               </div>
@@ -154,8 +163,12 @@
           </div>
 
           <article class="grid gap-6 rounded-2xl bg-white shadow-card overflow-hidden lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1.2fr)]">
-            <!-- Image -->
-            <div class="relative h-56 w-full overflow-hidden sm:h-72 lg:h-full">
+            <!-- Image (click → 원문 기사) -->
+            <a
+              href="https://weekly.hankooki.com/news/articleView.html?idxno=7140224"
+              target="_blank"
+              class="relative block h-56 w-full overflow-hidden sm:h-72 lg:h-full"
+            >
               <img
                 src="https://cdn.weekly.hankooki.com/news/photo/202512/7140224_217930_5318.jpg"
                 alt="FIN:NECT 성과공유회 현장 사진"
@@ -168,7 +181,7 @@
                 </span>
                 <span class="text-[11px] opacity-80">핀테크 사회공헌 · 포용금융 · 금융사회 안전망</span>
               </div>
-            </div>
+            </a>
 
             <!-- Content -->
             <div class="flex flex-col justify-center gap-4 p-6 sm:p-8">
@@ -177,8 +190,8 @@
                 금융사회 안전망 – ‘FIN:NECT’ 3개년 프로젝트
               </h3>
               <p class="text-sm sm:text-base text-gray-700 leading-relaxed">
-                카카오뱅크는 한국핀테크지원센터와 함께 핀테크 스타트업 31개사와 금융 포용·안전망 강화를 위한
-                통합 성과공유회를 열고, 2026년 핀테크 지원사업에 <span class="font-semibold">14억 원을 추가 기부</span>했습니다.
+                카카오뱅크는 한국핀테크지원센터와 함께 핀테크 스타트업 31개사와 금융 포용·안전망 강화를 위한 통합
+                성과공유회를 열고, 2026년 핀테크 지원사업에 <span class="font-semibold">14억 원을 추가 기부</span>했습니다.
                 누적 기부액은 총 51억 원. 초기 창업팀 발굴(챌린지)부터 성장·해외 진출(이노베이션 스쿨·데모데이)까지
                 풀 파이프라인을 갖춘다는 점이 특징입니다.
               </p>
@@ -202,9 +215,13 @@
                   <span>FIN:NECT 스토리 Deep Dive</span>
                   <span class="material-symbols-outlined text-[16px]">arrow_downward</span>
                 </a>
-                <span class="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-[11px] text-gray-500">
-                  프로그램: 챌린지 · 이노베이션 스쿨 · 데모데이
-                </span>
+                <a
+                  href="https://weekly.hankooki.com/news/articleView.html?idxno=7140224"
+                  target="_blank"
+                  class="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-[11px] text-gray-500 hover:border-gray-300"
+                >
+                  원문 기사 보기
+                </a>
               </div>
             </div>
           </article>
@@ -219,11 +236,15 @@
           <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             <!-- Kakao Ventures / CES -->
             <article class="flex flex-col rounded-2xl bg-white p-5 shadow-card">
-              <div class="mb-3 h-32 w-full rounded-xl bg-gradient-to-br from-sky-100 via-violet-100 to-blue-50 flex items-center justify-center">
+              <a
+                href="https://www.mk.co.kr/news/business/11483997"
+                target="_blank"
+                class="mb-3 flex h-32 w-full items-center justify-center rounded-xl bg-gradient-to-br from-sky-100 via-violet-100 to-blue-50"
+              >
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-600">
                   CES 2026 · STARTUPS
                 </p>
-              </div>
+              </a>
               <div class="flex-1 space-y-2">
                 <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-[11px] font-semibold text-gray-700">
                   Kakao Ventures
@@ -248,11 +269,15 @@
 
             <!-- Kakao Games / PoE2 -->
             <article class="flex flex-col rounded-2xl bg-white p-5 shadow-card">
-              <div class="mb-3 h-32 w-full rounded-xl bg-gradient-to-br from-emerald-100 via-slate-900 to-emerald-300 flex items-center justify-center">
+              <a
+                href="https://gamefocus.co.kr/detail.php?number=171770"
+                target="_blank"
+                class="mb-3 flex h-32 w-full items-center justify-center rounded-xl bg-gradient-to-br from-emerald-100 via-slate-900 to-emerald-300"
+              >
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-50">
                   GAME · ACTION RPG
                 </p>
-              </div>
+              </a>
               <div class="flex-1 space-y-2">
                 <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-[11px] font-semibold text-gray-700">
                   Kakao Games · Path of Exile 2
@@ -277,11 +302,15 @@
 
             <!-- KakaoTalk / 옾챗상담소 -->
             <article class="flex flex-col rounded-2xl bg-white p-5 shadow-card">
-              <div class="mb-3 h-32 w-full rounded-xl bg-gradient-to-br from-yellow-100 via-white to-amber-200 flex items-center justify-center">
+              <a
+                href="https://www.newsis.com/view/NISX20251204_0003428339#"
+                target="_blank"
+                class="mb-3 flex h-32 w-full items-center justify-center rounded-xl bg-gradient-to-br from-yellow-100 via-white to-amber-200"
+              >
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-700">
                   TALK · COMMUNITY
                 </p>
-              </div>
+              </a>
               <div class="flex-1 space-y-2">
                 <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-[11px] font-semibold text-gray-700">
                   KakaoTalk · 오픈채팅 커뮤니티
@@ -306,11 +335,15 @@
 
             <!-- Logistics / Hanjin + Kakao Mobility -->
             <article class="flex flex-col rounded-2xl bg-white p-5 shadow-card md:col-span-2 xl:col-span-1">
-              <div class="mb-3 h-32 w-full rounded-xl bg-gradient-to-br from-slate-900 via-slate-700 to-amber-400 flex items-center justify-center">
+              <a
+                href="https://www.nocutnews.co.kr/news/6438191?utm_source=naver&utm_medium=article&utm_campaign=20251204100523"
+                target="_blank"
+                class="mb-3 flex h-32 w-full items-center justify-center rounded-xl bg-gradient-to-br from-slate-900 via-slate-700 to-amber-400"
+              >
                 <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-100">
                   MOBILITY · LOGISTICS 4.0
                 </p>
-              </div>
+              </a>
               <div class="flex-1 space-y-2">
                 <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-[11px] font-semibold text-gray-700">
                   Hanjin × Kakao Mobility
@@ -365,14 +398,18 @@
             </header>
 
             <div class="px-6 pb-8 pt-5 sm:px-8 sm:pt-6 sm:pb-10">
-              <!-- main image -->
-              <div class="w-full overflow-hidden rounded-xl">
+              <!-- main image (click → 원문) -->
+              <a
+                href="https://weekly.hankooki.com/news/articleView.html?idxno=7140224"
+                target="_blank"
+                class="block w-full overflow-hidden rounded-xl"
+              >
                 <img
                   src="https://cdn.weekly.hankooki.com/news/photo/202512/7140224_217930_5318.jpg"
                   class="w-full h-auto object-cover"
                   alt="FIN:NECT 성과공유회 현장"
                 />
-              </div>
+              </a>
 
               <!-- lead -->
               <section class="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1.1fr)]">
@@ -416,6 +453,14 @@
                   <p class="mt-1 text-[12px] leading-relaxed">
                     챌린지: 초기 창업팀 발굴 / 이노베이션 스쿨: 사회안전망 관련 기술 기업 성장 지원 /
                     데모데이: 동남아·싱가포르 등 해외 시장 진출 교두보 마련.
+                  </p>
+                  <p class="text-[11px]">
+                    원문 기사:
+                    <a href="https://weekly.hankooki.com/news/articleView.html?idxno=7140224"
+                       target="_blank"
+                       class="underline hover:no-underline text-gray-700">
+                      주간한국 – 핀넥트 성과 공유회
+                    </a>
                   </p>
                 </aside>
               </section>
@@ -522,6 +567,16 @@
                     신약 개발 테크바이오
                   </li>
                 </ul>
+                <p class="text-[11px] opacity-80">
+                  원문 기사:
+                  <a
+                    href="https://www.mk.co.kr/news/business/11483997"
+                    target="_blank"
+                    class="underline hover:no-underline text-amber-200"
+                  >
+                    매일경제 – CES 2026 카카오벤처스 포트폴리오
+                  </a>
+                </p>
               </aside>
             </section>
           </article>
@@ -583,6 +638,16 @@
                     <li>직전 리그 ‘세 번째 칙령’ 심연 콘텐츠 코어 편입</li>
                     <li>12월 13~16일 무료 플레이 이벤트 및 트위치 드롭스 진행</li>
                   </ul>
+                  <p class="text-[11px]">
+                    원문 기사:
+                    <a
+                      href="https://gamefocus.co.kr/detail.php?number=171770"
+                      target="_blank"
+                      class="underline hover:no-underline text-gray-700"
+                    >
+                      게임포커스 – 패스 오브 엑자일 2 확장팩
+                    </a>
+                  </p>
                 </div>
               </aside>
             </div>
@@ -635,9 +700,15 @@
                   <li>재테크편 – 슈퍼 골드 머니건</li>
                   <li>우주과학편 – 달 LED 무드등</li>
                 </ul>
-                <p class="mt-2">
-                  오픈채팅 커뮤니티의 피드·댓글 기능을 기반으로
-                  ‘관심사 기반 대화’라는 서비스 포지셔닝을 강화하는 캠페인이라고 볼 수 있습니다.
+                <p class="mt-2 text-[11px]">
+                  원문 기사:
+                  <a
+                    href="https://www.newsis.com/view/NISX20251204_0003428339#"
+                    target="_blank"
+                    class="underline hover:no-underline text-gray-700"
+                  >
+                    뉴시스 – 옾챗상담소 캠페인
+                  </a>
                 </p>
               </aside>
             </section>
@@ -681,9 +752,15 @@
                   <li>자율주행·AI 운영 시스템 도입으로 배송 효율성과 안전성 제고</li>
                   <li>장기적으로 운송 비용 절감, 서비스 품질 균일화 지향</li>
                 </ul>
-                <p class="text-[11px] opacity-80">
-                  “데이터 기반 차세대 물류 운영 체계”를 함께 설계하며,
-                  카카오모빌리티의 기술력으로 물류 산업 전반의 디지털 전환을 견인한다는 포지셔닝.
+                <p class="text-[11px]">
+                  원문 기사:
+                  <a
+                    href="https://www.nocutnews.co.kr/news/6438191?utm_source=naver&utm_medium=article&utm_campaign=20251204100523"
+                    target="_blank"
+                    class="underline hover:no-underline text-amber-200"
+                  >
+                    노컷뉴스 – 한진·카카오모빌리티 MOU
+                  </a>
                 </p>
               </aside>
             </section>
@@ -692,11 +769,10 @@
 
         <!-- Footer-like project note -->
         <section class="mb-4 rounded-2xl border border-dashed border-gray-300 bg-gray-50 px-5 py-6 text-xs text-gray-600">
-          <p class="font-semibold text-gray-800 mb-1">Portfolio Note</p>
+          <p class="font-semibold text-gray-800 mb-1"> Note</p>
           <p>
             이 페이지는 실제 언론 기사·보도자료를 기반으로, 카카오 관련 디지털·핀테크·모빌리티 이슈를
             하나의 사내 뉴스룸 인터페이스로 재구성한 포트폴리오용 작업입니다.
-            정보 구조 설계(랜딩–목록–상세), 카피라이팅, UI 구성, 섹션 구분 등은 모두 직접 구성한 것입니다.
           </p>
         </section>
 
@@ -708,7 +784,7 @@
       <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-4 text-[11px] text-gray-500 sm:flex-row sm:px-6 lg:px-8">
         <p>© 2025 Kakao Impact Newsroom · Concept Design for Portfolio</p>
         <p class="text-[10px] sm:text-[11px]">
-          All trademarks and logos belong to their respective owners. This is a non-commercial, portfolio project.
+          All trademarks and logos belong to their respective owners. This is a non-commercial.
         </p>
       </div>
     </footer>
